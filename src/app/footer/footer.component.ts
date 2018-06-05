@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NewServiceService} from '../new-service.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  name : string;
+
+  constructor(private newservice : NewServiceService) {
+}
 
   ngOnInit() {
+    this.name = this.newservice.printBest();
   }
 
 }
