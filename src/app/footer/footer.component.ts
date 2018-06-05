@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
   name : string;
 
   constructor(private newservice : NewServiceService) {
+
 }
 
   ngOnInit() {
