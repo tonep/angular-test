@@ -7,6 +7,7 @@ export class NewServiceService {
 
   name : string;
   name2 : string;
+  name3 : string;
 
   constructor() { }
 
@@ -18,6 +19,11 @@ export class NewServiceService {
   printSomethingElse() {
     this.name = "notlouis";
     return this.name2;
+  }
+
+  printBest() {
+    this.name = "NgWA";
+    return this.name3;
   }
 
 
